@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form"
 import isEmail from "validator/lib/isEmail"
 import classNames from 'classnames/bind'
 import axios from 'axios'
-import { Redirect } from "react-router-dom"
 import {API_BASE_URL, API_PORT, Login_endpoint} from '../config'
 
 export default function Login () {
@@ -37,7 +36,7 @@ const {
       
   const onSubmit = (data = {email, password}) => {
     console.log('data is ', data)
-    axios.post(url, {
+    axios.get(url, {
         email: data.email,
         password: data.password
               
@@ -80,10 +79,6 @@ const {
   
   const  [redirect] = useState(false);
    
-      if (redirect==true) {
-        return <Redirect to="/Admin" />
-      }
-      else{
 
         // Return login component
     return (
@@ -139,5 +134,4 @@ const {
             </body>
         </>
     )
-}
 }
