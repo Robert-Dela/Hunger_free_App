@@ -12,7 +12,8 @@ export default function Meals () {
 
 const { body, container, dashboard, side_nav, logo, main_content, 
         header, navigation_list, navigation_item, navigation_icon,
-
+        sub_content,
+        
       } = styles
 
     return (
@@ -65,7 +66,13 @@ const { body, container, dashboard, side_nav, logo, main_content,
                         </section>
 
                         <section className={main_content}>
-                            Manage Meals
+                            <div>
+                                <h2>Manage Meals</h2>
+                            </div>
+
+                            <div className={sub_content}>
+                                <h4>Meal ID</h4>
+                            </div>
                         </section>
                     </div>
                 </div>

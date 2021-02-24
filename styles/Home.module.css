@@ -5,7 +5,7 @@
     background-size: cover;
     height: 100%;
     margin: 0;
-    color: #000;
+    color: rgba(78, 78, 78, 0.925);
 }
 
 .container {
@@ -13,6 +13,7 @@
     height: 100%;
     margin: 0;
     padding: 5% 10%;
+    
 }
 
 .dashboard {
@@ -49,8 +50,8 @@
 
 .main_content {
     grid-area: main;
-    background: rgba(240, 241, 240, 0.788);
-    text-align: center;
+    background: #2d93f827;
+    padding: 0 40px;
 }
 
 .navigation_list {
@@ -71,4 +72,12 @@
 .navigation_icon {
     margin-right: 20px;
     text-align: center;
+}
+
+.sub_content {
+    height: 68%;
+    width: auto;
+    background: #fff;
+    padding: 0.5px 20px;
+    box-shadow: 0 0.5rem 1rem rgba(10, 2, 2, 0.2);
 }

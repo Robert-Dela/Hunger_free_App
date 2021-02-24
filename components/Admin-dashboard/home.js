@@ -13,7 +13,7 @@ export default function Home () {
 
 const { body, container, dashboard, side_nav, logo, main_content, 
         header, navigation_list, navigation_item, navigation_icon,
-        
+        sub_content,
 
       } = styles
 
@@ -67,8 +67,15 @@ const { body, container, dashboard, side_nav, logo, main_content,
                         </section>
 
                         <section className={main_content}>
-                            Welcome Robert Deladem <br/>
-                            Admin Dashboard
+                            <div>
+                                <h2> Welcome Robert Deladem</h2>
+                                <h3>Admin Dashboard</h3>
+                            </div>
+
+                            <div className={sub_content}>
+                                <h4>Meal Orders</h4>
+                            </div>
+
                         </section>
                     </div>
                 </div>

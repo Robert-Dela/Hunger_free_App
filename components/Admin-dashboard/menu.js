@@ -12,7 +12,8 @@ export default function Menu () {
 
 const { body, container, dashboard, side_nav, logo, main_content, 
         header, navigation_list, navigation_item, navigation_icon,
-
+        sub_content,
+        
       } = styles
 
     return (
@@ -65,7 +66,13 @@ const { body, container, dashboard, side_nav, logo, main_content,
                         </section>
 
                         <section className={main_content}>
-                            Manage Food Menu
+                            <div>
+                                <h2>Manage Food Menu</h2>
+                            </div>
+
+                            <div className={sub_content}>
+                                <h4>Menu</h4>
+                            </div>
                         </section>
                     </div>
                 </div>
