@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
-import styles from '../../styles/home.module.css'
+import styles from '../../styles/main.module.css'
 
 export default function Main () {
 
@@ -14,7 +14,7 @@ const {body, container,
             <Head>
                 <link rel="preload" href="/fonts/Work_Sans/static/WorkSans-Regular.ttf" as="Font" crossOrigin=""/>
                 
-                <title>Hunger Children</title>
+                <title>HUNGER FREE</title>
             </Head>
 
             <body className={body}>
