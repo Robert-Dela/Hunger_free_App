@@ -86,7 +86,7 @@ const {
             <Head>
                 <link rel="preload" href="/fonts/Work_Sans/static/WorkSans-Regular.ttf" as="Font" crossOrigin=""/>
                 
-                <title>Hunger Children</title>
+                <title>HUNGER FREE</title>
             </Head>
 
                 {/* Login Form  */}
