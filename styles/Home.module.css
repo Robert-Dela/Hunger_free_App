@@ -1,9 +1,74 @@
 .body {
     font-family: "WorkSans";    
-    background: linear-gradient(to right bottom, #3399ffb7, #ff1ac6b7);
+    /* background: linear-gradient(to right bottom, #3399ffb7, #0a5eb1b7); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     margin: 0;
     color: #000;
+}
+
+.container {
+    background: linear-gradient(to right bottom, #3399ffb7, #0a5eb1b7); 
+    height: 100%;
+    margin: 0;
+    padding: 5% 10%;
+}
+
+.dashboard {
+    background: #fff;
+    height: auto;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 60px 466px;
+    grid-template-areas: "header header" "sidenav main";
+}
+
+.header {
+    background: #fff;
+    grid-area: header;
+
+}
+
+.side_nav {
+    height: inherit;
+    background: #fff;
+    grid-area: sidenav;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 2opx;
+    font-weight: 600;
+    display: inline-block;
+    background-image: linear-gradient(to right, #3399ffb7, #ff1ac6b7);
+    -webkit-background-clip: text;
+    color:transparent;
+    margin: 20px 0 0 50px;
+}
+
+.main_content {
+    grid-area: main;
+    background: rgba(240, 241, 240, 0.788);
+    text-align: center;
+}
+
+.navigation_list {
+    list-style: none;
+}
+
+.navigation_item {
+    margin-bottom: 20px;
+    color: rgb(101, 102, 101);
+    cursor: pointer;
+    
+}
+
+.navigation_item:hover {
+    color: #3399ffb7;
+}
+
+.navigation_icon {
+    margin-right: 20px;
+    text-align: center;
 }
