@@ -13,22 +13,30 @@
       "password": "nilson"
     }
   ],
-
-  "posts": [
+  "students": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "firstname": "robert",
+      "lastname": "dakey",
+      "email": "bruno@email.com",
+      "age": "20",
+      "Class": "Form 2"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "firstname": "Bob",
+      "lastname": "Skyis ",
+      "email": "dakeyr135@gmail.com",
+      "age": "25",
+      "Class": "Form 2",
+      "id": 7
+    },
+    {
+      "firstname": "Jeff Kofi",
+      "lastname": "Asmah",
+      "email": "jeff@azubiafrica.org",
+      "age": "15",
+      "Class": "Form 1",
+      "id": 8
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

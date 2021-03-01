@@ -9,25 +9,30 @@
 }
 
 .container {
-    background: linear-gradient(to right bottom, #3399ffb7, #0a5eb1b7); 
+    background: linear-gradient(to right bottom, #035cb6b7, #0a5eb1b7), url(../public/food.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     margin: 0;
-    padding: 5% 10%;
-    
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
 }
 
 .dashboard {
     background: #fff;
     height: auto;
+    width: fit-content;
     display: grid;
-    grid-template-columns: 20% auto;
-    grid-template-rows: 60px 466px;
+    grid-template-columns: fit-content fit-content;
+    grid-template-rows: 60px fit-content;
     grid-template-areas: "header header" "sidenav main";
 }
 
 .header {
     background: #fff;
     grid-area: header;
+    height: 60px;
 
 }
 
@@ -35,49 +40,81 @@
     height: inherit;
     background: #fff;
     grid-area: sidenav;
+    margin-right: 50px;
 }
 
 .logo {
     text-transform: uppercase;
-    font-size: 2opx;
+    font-size: 17px;
     font-weight: 600;
     display: inline-block;
     background-image: linear-gradient(to right, #3399ffb7, #ff1ac6b7);
     -webkit-background-clip: text;
     color:transparent;
-    margin: 20px 0 0 50px;
+    margin: 20px 0 0 40px;
 }
 
 .main_content {
     grid-area: main;
     background: #2d93f827;
-    padding: 0 40px;
+    padding: 40px 40px;
+    width: fit-content;
+
 }
 
 .navigation_list {
     list-style: none;
+    margin-top: 20px;
+    
 }
 
 .navigation_item {
     margin-bottom: 20px;
     color: rgb(101, 102, 101);
     cursor: pointer;
+    display: flex;
+    align-items: baseline;
     
 }
 
 .navigation_item:hover {
-    color: #3399ffb7;
+    color: #035cb6b7;
 }
 
 .navigation_icon {
     margin-right: 20px;
-    text-align: center;
 }
 
 .sub_content {
-    height: 68%;
-    width: auto;
+    height: fit-content;
+    width: fit-content;
     background: #fff;
-    padding: 0.5px 20px;
+    padding: 20px 20px;
     box-shadow: 0 0.5rem 1rem rgba(10, 2, 2, 0.2);
 }
+
+.btn {
+    display: flex;
+    background:#0a5eb1b7;
+    border: 1px solid #0a5eb1b7;
+    border-radius: 2px;
+    font-family: "WorkSans";    
+    padding: 5px 10px;
+    /* width: 110px; */
+    text-decoration: none;
+    color: #fff; 
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #0a5eb1b7;
+}
+
+.add_icon {
+    margin-right: 8px;
+}
+

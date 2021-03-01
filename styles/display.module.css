@@ -1,0 +1,41 @@
+.Table {
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+    width: 100%;
+
+}
+
+.Table td,
+.Table th {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  padding-right: 50px;
+  
+}
+
+.Table tr:hover {
+  background-color: #ddd;
+}
+
+.Table th {
+  text-align: left;
+  /* background: #0a5eb1b7; */
+  background: #fff;
+
+}
+
+.table_action {
+    text-align: center;
+
+}
+
+.table_btn {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.table_btn:hover {
+    color: #035cb6b7;
+}

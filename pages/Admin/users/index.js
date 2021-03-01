@@ -1,5 +1,5 @@
 import React from 'react';
-import Users from '../../../components/Admin-dashboard/users';
+import Users from '../../../components/Admin-dashboard/users/users';
 
 export default function Users_dashboard() {
   return (
