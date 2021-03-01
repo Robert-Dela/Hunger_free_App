@@ -5,7 +5,8 @@ import styles from '../../styles/main.module.css'
 export default function Main () {
 
 
-const {body, container, 
+const { body, container, content, content_header, logo, btn,
+        content_body,
 
       } = styles
 
@@ -19,7 +20,26 @@ const {body, container,
 
             <body className={body}>
                 <div className={container}>
-User Page
+                    <div className={content}>
+                        <section className={content_header}>
+                            <div className={logo}>
+                                HUNGERFREE
+                            </div>
+                            <h2>ORDER ALL OF YOUR MEALS RIGHT HERE</h2>
+                            <button type="submit" className={btn}  value="submit">Show Meal Orders</button> 
+                                                       
+                        </section>
+
+                        <section className={content_body}>
+                        
+                            <h2>MONDAY</h2>
+                            <h2>TUESDAY</h2>
+                            <h2>WEDNESDAY</h2>
+                            <h2>THURSDAY</h2>
+                            <h2>FRIDAY</h2>
+
+                        </section>
+                    </div>
                 </div>
             </body>
         </>
