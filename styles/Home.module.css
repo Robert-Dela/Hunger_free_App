@@ -24,7 +24,7 @@
     height: auto;
     width: fit-content;
     display: grid;
-    grid-template-columns: fit-content fit-content;
+    grid-template-columns: auto auto;
     grid-template-rows: 60px fit-content;
     grid-template-areas: "header header" "sidenav main";
 }
