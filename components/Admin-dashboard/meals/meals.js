@@ -2,19 +2,27 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../../../styles/home.module.css'
-import { FaHome } from 'react-icons/fa'
-import { FaUserCheck } from 'react-icons/fa'
-import { GiHotMeal } from 'react-icons/gi'
-import { GiMeal } from 'react-icons/gi'
+import MealModal from '../meals/mealmodal'
+import { FaUserCheck, FaHome } from 'react-icons/fa'
+import { GiHotMeal, GiMeal } from 'react-icons/gi'
+import { MdLibraryAdd } from 'react-icons/md'
+import MealList from '../meals/showmeal'
 
 export default function Meals () {
 
 
 const { body, container, dashboard, side_nav, logo, main_content, 
         header, navigation_list, navigation_item, navigation_icon,
-        sub_content,
+        sub_content, btn, add_icon, table,
         
       } = styles
+
+// Pop up modal
+const [showmodal, setshowmodal] = useState(false);
+
+const openModal = () => {
+    setshowmodal(prev => !prev);
+};
 
     return (
         <>
@@ -71,7 +79,17 @@ const { body, container, dashboard, side_nav, logo, main_content,
                             </div>
 
                             <div className={sub_content}>
-                                <h4>Meal ID</h4>
+                                <button className={btn}  id="modalpopup" name="modalpopup" onClick={openModal}>
+                                    <MdLibraryAdd className={add_icon}/> Add Meal
+                                </button>
+
+                                <MealModal showmodal={showmodal} setshowmodal={setshowmodal} />
+                                <br></br>
+                                <br></br>
+
+                                <div className={table}>
+                                    <MealList/>
+                                </div>
                             </div>
                         </section>
                     </div>
