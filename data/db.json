@@ -13,6 +13,7 @@
       "password": "nilson"
     }
   ],
+
   "students": [
     {
       "id": 1,
@@ -29,8 +30,17 @@
       "age": "15",
       "Class": "Form 1",
       "id": 8
+    },
+    {
+      "firstname": "Enoch",
+      "lastname": "Bonsu",
+      "email": "enouch@gmail.com",
+      "age": "26",
+      "Class": "Form 3",
+      "id": 9
     }
   ],
+
   "meals": [
     {
       "name": "Rice & Beans",
@@ -49,6 +59,31 @@
       "price": "12",
       "protein": "Chicken",
       "id": 4
+    },
+    {
+      "name": "Fried Rice",
+      "price": "15",
+      "protein": "Turkey",
+      "id": 5
     }
+  ],
+
+  "menu": [
+    {
+      "day": "Monday",
+      "meal": "Waakye, Gari with Stew"
+    },
+    {
+      "day": "Thursday",
+      "meal": "Fried Rice"
+    },
+    {
+      "day": "Friday",
+      "meal": "Rice & Beans"
+    }
+  ],
+
+  "orders": [
+
   ]
 }

@@ -2,19 +2,20 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../../../styles/home.module.css'
-import { FaHome } from 'react-icons/fa'
-import { FaUserCheck } from 'react-icons/fa'
-import { GiHotMeal } from 'react-icons/gi'
-import { GiMeal } from 'react-icons/gi'
+import { FaUserCheck, FaHome } from 'react-icons/fa'
+import { GiHotMeal, GiMeal } from 'react-icons/gi'
+import MenuList from '../menu/showmenu'
+
 
 export default function Menu () {
 
-
+// CSS style classnames
 const { body, container, dashboard, side_nav, logo, main_content, 
         header, navigation_list, navigation_item, navigation_icon,
-        sub_content,
+        sub_content, btn, add_icon, table,
         
       } = styles
+
 
     return (
         <>
@@ -71,7 +72,11 @@ const { body, container, dashboard, side_nav, logo, main_content,
                             </div>
 
                             <div className={sub_content}>
-                                <h4>Menu</h4>
+
+                                <div className={table}>
+                                    <MenuList/>
+                                </div>
+
                             </div>
                         </section>
                     </div>

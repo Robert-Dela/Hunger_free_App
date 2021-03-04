@@ -8,9 +8,10 @@ import { GiHotMeal, GiMeal } from 'react-icons/gi'
 import { MdLibraryAdd } from 'react-icons/md'
 import MealList from '../meals/showmeal'
 
+
 export default function Meals () {
 
-
+// CSS style classnames
 const { body, container, dashboard, side_nav, logo, main_content, 
         header, navigation_list, navigation_item, navigation_icon,
         sub_content, btn, add_icon, table,

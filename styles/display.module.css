@@ -39,3 +39,29 @@
 .table_btn:hover {
     color: #035cb6b7;
 }
+
+.btn {
+  display: flex;
+  background:#0a5eb1b7;
+  border: 1px solid #0a5eb1b7;
+  border-radius: 2px;
+  font-family: "WorkSans";    
+  padding: 5px 10px;
+  /* width: 110px; */
+  text-decoration: none;
+  color: #fff; 
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  /* margin-bottom: 20px; */
+}
+
+.btn:hover {
+  background: #fff;
+  color: #0a5eb1b7;
+}
+
+.add_icon {
+  margin-right: 8px;
+}
+

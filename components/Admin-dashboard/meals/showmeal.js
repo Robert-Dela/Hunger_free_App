@@ -16,7 +16,6 @@ export default function MealList(){
     //Enpoints and urls
 
     const list_meals_url = `${API_BASE_URL}:${API_PORT}/${Meal_endpoint}`
-    // const list_students_url = 'https://jsonplaceholder.typicode.com/users'
 
 
 
@@ -54,7 +53,7 @@ export default function MealList(){
         })
     }
 
-    //mapping student details to table
+    //mapping meal details to table
 
     const renderBody = () => {
         return meals && meals.map(({ id, name, protein, price }) => {
@@ -63,7 +62,7 @@ export default function MealList(){
                     <td>{id}</td>
                     <td>{name} </td>
                     <td>{protein} </td>
-                    <td>{price}</td>
+                    <td>{price} {'.00'}</td>
                     <td className={table_action}>
                         <MdEdit className={table_btn}/>
 

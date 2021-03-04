@@ -111,7 +111,7 @@ export default function MealModal({ showmodal, setshowmodal }){
       console.log(data);
       
   }
-  console.log( watch('name'))
+  console.log( watch('mealname'))
 
     return(
         <>

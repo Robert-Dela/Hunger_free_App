@@ -6,4 +6,4 @@ const Meal_endpoint = 'meals'
 const Menu_endpoint = 'menu'
 const Meal_Order_endpoint = 'orders'
 
-export {API_BASE_URL, API_PORT, Login_endpoint, AddStudent_endpoint, Meal_endpoint, Meal_Order_endpoint}
+export {API_BASE_URL, API_PORT, Login_endpoint, AddStudent_endpoint, Meal_endpoint, Menu_endpoint, Meal_Order_endpoint}
